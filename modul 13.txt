@@ -1,0 +1,21 @@
+bilets = int(input('Введите колличество билетов: '))
+print(bilets)
+summa = 0
+for i in range(1, bilets+1):
+    age = int(input('Введите возраст: '))
+    print(age)
+    if 18 <= age < 25:
+        summa += 990
+        print(summa)
+    elif 25 <= age < 100:
+        summa += 1390
+        print(summa)
+    elif 0 < age < 18:
+        summa = 0
+        print(summa)
+    else:
+        print('Некорректное число')
+print('Сумма к оплате: ', summa)
+if bilets > 3:
+    summa = summa - summa * 0.1
+    print('Сумма к оплате с учетом скидки 10%: ', summa)
