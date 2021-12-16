@@ -1,0 +1,8 @@
+class Cat():
+    def __init__(self, name, sex, age):
+        self.name = name
+        self.sex = sex
+        self.age = age
+
+cat = Cat("Барон", "мальчик", "2 года")
+print(cat.age)
